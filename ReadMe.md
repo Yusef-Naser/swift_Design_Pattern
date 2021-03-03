@@ -62,3 +62,5 @@ Here’s how you’d indicate that Dog delegates to a PetOwning object:
 <img src="assets/shape2.tiff" width="50%" />
 
 <img src="assets/shape3.tiff" width="50%" />
+
+<img src="assets/s.jpg" width="50%" />
