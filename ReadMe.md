@@ -3,6 +3,31 @@
 2. Behavioral design pattern: Describes how objects communicate with each other. Examples of behavioral design patterns are Delegation, Strategy and Observer.
 3. Creational design pattern: Describes how to create or instantiate objects. Examples of creational patterns are Builder, Singleton and Prototype.
 
+# Criticisms of design patterns As indicated
+## - If you overuse design patterns, your project can become overly complex.
+- You need to be careful about overusing any tool, including design patterns. You can minimize this issue by clearly and correctly defining the problem to be solved before adding a design pattern to your project.
+
+## - Many design patterns are made redundant by modern programming languages.
+- It’s true that modern programming languages like Swift make some design patterns irrelevant or trivial to implement. However, just because some patterns are provided via a programming language doesn’t mean all patterns will be.
+
+## - Design patterns are a lazy substitute for learning object-oriented principles.
+- Why not learn both? A strong understanding of object-oriented principles will certainly help you in your development. However, if you already know a design pattern works well for a particular problem, why should you reinvent the solution from scratch?
+
+# Benefits of design patterns.
+## Design patterns create a common language.
+- Instead of describing a particular solution in detail, you can simply state which design pattern you think would work best. This streamlines communication between developers.
+
+## Design patterns fast-track developer onboarding.
+- It’s much easier to onboard a new developer on a project that uses design patterns, than on a project with completely custom logic.
+
+## Design patterns make you a better person.
+- Well, this one may still be up for debate. But some degree of self-improvement is never wasted! However, there is a grain of truth to this, as the next developer to maintain your project will certainly think you’re a better person for having left them a nice, designpattern- filled project instead of a spaghetti-coded mess!
+
+## Knowing design patterns allow you to spot similarities between code.
+- Once you know and understand different design patterns, you begin to notice their use in code. This gives you a leg up as you are at least a little familiar with how to use that code. For example, iOS and Mac programming makes heavy use of the Delegation pattern. You would spot this pattern easily if you ever moved to another platform that also uses Delegation and instantly be familiar with how the code is organized.
+
+
+
 # How to Read a Class Diagram
 
 ## To indicate that one class inherits from another, use an open arrowhead:
