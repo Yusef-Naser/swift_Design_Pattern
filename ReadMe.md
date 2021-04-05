@@ -88,7 +88,7 @@ Here’s how you’d indicate that Dog delegates to a PetOwning object:
 
 <img src="assets/shape3.tiff" width="50%" />
 
-# [Model-View-Controller](./MVC.playground)
+# [Model-View-Controller](./MVC.playground/Contents.swift)
 
 <img src="assets/MVC.png" width="50%" />
 
