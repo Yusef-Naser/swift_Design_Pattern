@@ -92,3 +92,17 @@ Here’s how you’d indicate that Dog delegates to a PetOwning object:
 
 <img src="assets/MVC.png" width="50%" />
 
+
+# [Delegate Pattern](./DelegatePattern.playground/Contents.swift)
+<img src="assets/Delegation_Pattern.png" width="50%" />
+
+- **An object needing a delegate**, also known as the delegating object. It’s the object that has a delegate. The delegate is usually held as a weak property to avoid a retain cycle where the delegating object retains the delegate, which retains the delegating object.
+- **A delegate protocol**, which defines the methods a delegate may or should implement.
+- **A delegate**, which is the helper object that implements the delegate protocol.
+
+# [Strategy Pattern](./StrategyPattern.playground/Contents.swift)
+<img src="assets/StrategyPattern.png" width="50%" />
+
+- The object using a strategy. This is most often a view controller when the pattern is used in iOS app development, but it can technically be any kind of object that needs interchangeable behavior.
+- The strategy protocol defines methods that every strategy must implement.
+- The strategies are objects that conform to the strategy protocol.
