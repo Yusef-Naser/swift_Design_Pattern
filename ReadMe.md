@@ -106,3 +106,35 @@ Here’s how you’d indicate that Dog delegates to a PetOwning object:
 - The object using a strategy. This is most often a view controller when the pattern is used in iOS app development, but it can technically be any kind of object that needs interchangeable behavior.
 - The strategy protocol defines methods that every strategy must implement.
 - The strategies are objects that conform to the strategy protocol.
+
+# [Singleton Pattern](./SingletonPattern.playground/Contents.swift)
+
+- Use the singleton pattern when having more than one instance of a class would cause problems, or when it just wouldn’t be logical.
+- Use the singleton plus pattern if a shared instance is useful most of the time, but you also want to allow custom instances to be created. An example of this is FileManager, which handles everything to do with filesystem access. There is a “default” instance which is a singleton, or you can create your own. You would usually create your own if you’re using it on a background thread.
+
+# [Memento Pattern](./MementoPattern.playground/Contents.swift)
+<img src="assets/MementoPattern.png" width="50%" />
+
+- The originator is the object to be saved or restored.
+- The memento represents a stored state.
+- The caretaker requests a save from the originator and receives a memento in response. The caretaker is responsible for persisting the memento and, later on, providing the memento back to the originator to restore the originator’s state.
+
+# [Observer Pattern](./ObserverPattern.playground/Contents.swift)
+<img src="assets/ObserverPattern.png" width="50%" />
+
+1. The subject is the object that’s being observed.
+2. The observer is the object doing the observing.
+
+- Unfortunately, Swift 4 doesn’t yet have language-level support for KVO. Instead, you’re
+required to import Foundation and subclass NSObject, which uses the Objective-C
+runtime to implement KVO. What if you don’t want to, or can’t subclass NSObject? You
+can write your own Observable wrapper class instead!
+- You’ll get hands-on practice doing both the KVO and the Observable wrapper
+implementations of the observer pattern in this chapter.
+
+# [Builder Pattern](./BuilderPattern.playground/Contents.swift)
+<img src="assets/BuilderPattern.png" width="50%" />
+1. The director accepts inputs and coordinates with the builder. This is usually a view controller or a helper class that’s used by a view controller.
+2. The product is the complex object to be created. This can be either a struct or a class, depending on desired reference semantics. It’s usually a model, but it can be any type depending on your use case.
+3. The builder accepts step-by-step inputs and handles the creation of the product. This is often a class, so it can be reused by reference.
+
